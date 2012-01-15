@@ -4,10 +4,13 @@ SMPP user guide - work in progress
 Sending short messages should be as easy as the following lines of code.
 
 Starting the SMSC (short message service center):
+[listing]
+......................................
 --------------------------------------
 SMPPServer server = new SMPPServer("0.0.0.0", 2775);
 server.start();
 --------------------------------------
+......................................
 
 Creating a new ESME (external short message entity) and connect them to the SMSC:
 --------------------------------------
